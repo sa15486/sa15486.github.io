@@ -1,0 +1,348 @@
+html,body, h1, h2, h3, h4, h5 {
+    /*font-family:Verdana,sans-serif;*/
+    font-family:"Segoe UI",Arial,sans-serif;
+    font-size:17px;
+    line-height:1.5;
+    font-weight:400;
+    margin:10px 0;
+}
+
+html {
+    box-sizing:border-box;
+    overflow-x:hidden
+}
+
+*, *:before, *:after{
+     box-sizing:inherit
+ }
+
+body {
+    font-size:16px;
+    margin:0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  margin:20px 0;
+  width:20%;
+  border:5px solid #388697;
+}
+
+
+img {
+    vertical-align:middle;
+}
+
+@media (min-width:993px){hide-large{display:none!important}}
+
+
+.top {
+    position:fixed;
+    width:100%;
+    z-index:1
+}
+
+.top{
+    top:0;
+}
+
+.padding-large {
+    padding:12px 24px!important
+}
+
+h1 {font-size:36px;}
+h3 {font-size:24px;}
+
+.sidebar {
+    height:100%;
+    position:fixed;
+    z-index:3;
+    width:300px;
+    font-weight:bold;
+    top:0;
+    overflow:auto;
+}
+
+@media (min-width:993px) {
+    .hide-large {
+        display:none!important;
+    }
+    .sidebar.collapse {
+        display:block!important;
+    }
+}
+
+@media (max-width:992px) {
+    .sidebar.collapse {
+        display:none;
+    }
+    .main {
+        margin-left:0!important;
+        margin-right:0!important;
+    }
+}
+
+.large {
+    font-size:18px!important;
+}
+
+.padding {
+    padding:8px 16px!important;
+}
+
+.button{
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+}
+
+.button:hover{
+    color:#000!important;
+    background-color:#ccc!important;
+}
+
+
+.display-topleft {
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.container {
+    padding:0.01em 16px;
+}
+
+.container:after,
+.container:before,
+.row-padding:after,
+.row-padding:before {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.padding-32 {
+    padding-top:32px!important;
+    padding-bottom:32px!important;
+}
+
+.padding-64 {
+    padding-top:64px!important;
+    padding-bottom:64px!important;
+}
+
+.bar-block .bar-item {
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0;
+}
+
+.xlarge {
+    font-size:24px!important;
+}
+
+.margin-right {
+    margin-right:16px!important;
+}
+
+.overlay {
+    position:fixed;
+    display:none;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.5);z-index:2;
+}
+
+.main {
+    transition:margin-left .4s;
+}
+
+.jumbo {
+    font-size:64px!important;
+}
+
+.xxxlarge {
+    font-size:48px!important;
+}
+
+.text-red {
+    color: #388697!important;
+}
+
+.blue-button {
+    color:#fff!important;
+    background-color: #388697!important;
+}
+
+.round {
+    border-radius:4px;
+}
+
+.row-padding {
+    padding:0 8px;
+}
+
+.col {
+    float:left;
+    width:100%;
+}
+
+
+.grayscale {
+    filter:grayscale(75%)
+}
+
+@media (min-width:601px) {
+    .col {width:33.33333%}
+}
+
+.margin-bottom {
+    margin-bottom:16px!important;
+}
+
+.main-colour {
+    color:#fff!important;
+    background: #3dcdbc;
+    background: -moz-linear-gradient(left, #3dcdbc 0%, #33a1bd 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #3dcdbc), color-stop(100%, #33a1bd));
+    background: -webkit-linear-gradient(left, #3dcdbc 0%, #33a1bd 100%);
+    background: -o-linear-gradient(left, #3dcdbc 0%, #33a1bd 100%);
+    background: -ms-linear-gradient(left, #3dcdbc 0%, #33a1bd 100%);
+    background: linear-gradient(to right, #3dcdbc 0%, #33a1bd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3dcdbc', endColorstr='#33a1bd', GradientType=1 );
+}
+
+
+.light-grey {
+    color:#000!important;
+    background-color:#f1f1f1!important;
+}
+
+.opacity {
+    opacity:0.60;
+}
+
+.right {
+    float:right!important;
+}
+
+/* for slideshow */
+/* code for slide show was taken from https://www.w3schools.com/howto/howto_js_slideshow.asp */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
